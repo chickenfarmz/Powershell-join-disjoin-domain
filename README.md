@@ -1,2 +1,3 @@
-# Powershell-join-disjoin-domain
-how to join disjoin computer to domain
+#rename computer then add to domain then reboot
+Rename-Computer -NewName "computername" -Credential administrator -Force
+Add-Computer -DomainName Domain01 -Credential blob-com\jon.do.adm -Restart
